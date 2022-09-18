@@ -127,7 +127,7 @@ def run(event,arg, id):
     #print(decryptedFolder)
     backup = DecryptBackup(backupFolder, decryptedFolder)
     backup.decrypt_with_password(password)
-    start decryption
+    #start decryption
     backup.process_backup()
     l = dowload_STIX(resultsFolder)
     check_backup__(resultsFolder,decryptedFolder,l)
