@@ -124,11 +124,11 @@ def run(event,arg, id):
     if len(password)==0:
         messagebox.showerror("Password required", "Please enter first your backup password.")
         return
-    print(decryptedFolder)
-    #backup = DecryptBackup(backupFolder, decryptedFolder)
-    #backup.decrypt_with_password(password)
-    #start decryption
-    #backup.process_backup()
+    #print(decryptedFolder)
+    backup = DecryptBackup(backupFolder, decryptedFolder)
+    backup.decrypt_with_password(password)
+    start decryption
+    backup.process_backup()
     l = dowload_STIX(resultsFolder)
     check_backup__(resultsFolder,decryptedFolder,l)
     
